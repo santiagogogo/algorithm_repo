@@ -7,8 +7,18 @@ public class Solution {
     Scanner scanner = new Scanner(System.in);
 
 
-    public void main(String[] args) {
-
+    public static void main(String[] args) {
+        Solution solution=new Solution();
+        TreeNode root=null;
+        solution.createTree(root);
+        solution.levelTraverse(root);
+        System.out.println("\n遍历输出原二叉树");
+        solution.mirror(root);
+        solution.levelTraverse(root);
+        System.out.println("\n递归遍历输出翻转二叉树");
+        solution.reverseNode(root);
+        solution.levelTraverse(root);
+        System.out.println("\n非递归遍历输出翻转二叉树");
     }
 
 
@@ -21,6 +31,7 @@ public class Solution {
     public TreeNode createTree(TreeNode root) {
         String val;
         val = scanner.next();
+        //System.out.println(val);
         if ("#".equals(val)) {
             return null;
         }
@@ -35,18 +46,19 @@ public class Solution {
      *
      * @param root
      */
-    public void mirror(TreeNode root) {
+    public TreeNode mirror(TreeNode root) {
         if (null == root) {
-            return;
+            return null;
         }
         if (root.right == null && root.left == null) {
-            return;
+            return root;
         }
-        TreeNode temp = root.left;
+        TreeNode temp = root.left; 
         root.left = root.right;
         root.right = temp;
         mirror(root.left);
         mirror(root.right);
+        return root;
     }
 
 
@@ -70,6 +82,25 @@ public class Solution {
             }
             if (root.left != null) {
                 queue.add(root.left);
+            }
+        }
+    }
+
+
+    public  void levelTraverse(TreeNode root){
+        if (root==null){
+            return;
+        }
+        LinkedList<TreeNode> queue=new LinkedList<TreeNode>();
+        queue.add(root);
+        while (queue.size()!=0){
+            TreeNode node=queue.removeFirst();
+            System.out.print(node.val+" ");
+            if (node.left!=null){
+                queue.add(node.left);
+            }
+            if (node.right!=null){
+                queue.add(node.right);
             }
         }
     }
