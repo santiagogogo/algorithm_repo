@@ -53,7 +53,7 @@ public class Solution {
         if (root.right == null && root.left == null) {
             return root;
         }
-        TreeNode temp = root.left; 
+        TreeNode temp = root.left;
         root.left = root.right;
         root.right = temp;
         mirror(root.left);
