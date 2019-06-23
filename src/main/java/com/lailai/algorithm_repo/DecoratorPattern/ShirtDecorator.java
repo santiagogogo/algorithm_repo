@@ -1,18 +1,16 @@
 package com.lailai.algorithm_repo.DecoratorPattern;
 
-public class ShirtDecorator implements Person {
-    private Person person;
+
+public class ShirtDecorator extends Decorator {
+
 
     public ShirtDecorator(Person person) {
-        this.person = person;
+        super(person);
     }
 
-    void setPerson(Person p){
-        this.person=p;
-    }
     @Override
     public void wear() {
-        person.wear();
+        super.wear();
         System.out.println("穿T恤");
 
     }
