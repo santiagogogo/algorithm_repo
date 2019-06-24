@@ -1,10 +1,10 @@
 package com.lailai.algorithm_repo.FacadePattern;
 
-public class CPU {
+public class Disk {
     public void start(){
-        System.out.println("cpu start...");
+        System.out.println("disk start...");
     }
     public void shutdown(){
-        System.out.println("cpu shutdown...");
+        System.out.println("disk shutdown...");
     }
 }
