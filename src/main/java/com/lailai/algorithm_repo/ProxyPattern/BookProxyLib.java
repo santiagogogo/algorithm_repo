@@ -6,7 +6,7 @@ import org.springframework.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 
-public class BookLib implements MethodInterceptor {
+public class BookProxyLib implements MethodInterceptor {
 
     private Object target;
 
