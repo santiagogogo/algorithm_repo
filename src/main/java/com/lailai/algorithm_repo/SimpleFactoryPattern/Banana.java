@@ -1,11 +1,12 @@
-package com.lailai.algorithm_repo.SimpleFactory;
+package com.lailai.algorithm_repo.SimpleFactoryPattern;
 
-public class Apple implements Fruit {
+
+public class Banana implements Fruit {
 
     private String name;
 
     public void get(){
-        System.out.println("收集苹果");
+        System.out.println("收集香蕉");
     }
 
     public String getName() {

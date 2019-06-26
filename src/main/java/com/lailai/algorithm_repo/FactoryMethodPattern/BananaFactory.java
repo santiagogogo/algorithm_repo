@@ -1,4 +1,4 @@
-package com.lailai.algorithm_repo.FactoryMethod;
+package com.lailai.algorithm_repo.FactoryMethodPattern;
 
 public class BananaFactory implements FruitFactory {
     @Override

@@ -1,4 +1,4 @@
-package com.lailai.algorithm_repo.FactoryMethod;
+package com.lailai.algorithm_repo.FactoryMethodPattern;
 
 public interface FruitFactory {
     public Fruit getFruit();

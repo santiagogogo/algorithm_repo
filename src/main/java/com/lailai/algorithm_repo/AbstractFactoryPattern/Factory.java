@@ -1,4 +1,4 @@
-package com.lailai.algorithm_repo.AbstractFactory;
+package com.lailai.algorithm_repo.AbstractFactoryPattern;
 
 public interface Factory {
     Bullet getBullet();

@@ -1,4 +1,4 @@
-package com.lailai.algorithm_repo.SimpleFactory;
+package com.lailai.algorithm_repo.SimpleFactoryPattern;
 
 public class FruitFactory {
 
