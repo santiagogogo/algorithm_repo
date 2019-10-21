@@ -1,4 +1,4 @@
-package com.lailai.pattern;
+package com.lailai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
