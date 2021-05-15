@@ -1,7 +1,6 @@
 package com.lailai.spring;
 
 /**
- * Created by santiago.ge on 2019/10/19 
  */
 
 public class TestShutdownHook {
